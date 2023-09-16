@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learner</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <!-- start header -->
     <header class="vh-100 w-100">
-        <nav class="top-nav position-relative" id="Home">
+        <nav class="top-nav" id="home">
             <div class="container">
-                <div class="row justify-content-between">
+                <div class="row  justify-content-between">
                     <div class="col-auto">
                         <i class="fa-regular fa-circle-question icon text-white"></i>
-                        <p class="d-inline-block mb-0 text-white">Have a questions</p>
+                        <p class=" mb-0 text-white">Have a questions</p>
                         <i class="fa-solid fa-phone icon text-white"></i>
-                        <p class="d-inline-block  mb-0 text-white">10 20 123 456</p>
-                        <i class="fa-solid fa-envelope icon text-white"></i>
-                        <p class="d-inline-block  mb-0 text-white">info@mydomain.com</p>
+                        <p class="  mb-0 text-white">10 20 123 456</p>
+                        <i class="fa-solid fa-envelope icon  text-white"></i>
+                        <p class="  mb-0 text-white">info@mydomain.com</p>
                     </div>
                     <div class="col-auto">
                         <a class="text-white" href="#"> <i class="fa-solid fa-lock icon text-white"></i> Log In</a>
@@ -31,21 +32,22 @@
             </div>
         </nav>
 
-        <nav class="navbar navbar-expand-lg navbar-light" data-bs-theme="light">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand text-white" href="#">Learner</a>
-                <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler border-secondary bg-primary style=" background-color: aliceblue;"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-sliders text-white"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white " href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Dropdown
                             </a>
                             <ul class="dropdown-menu ">
@@ -58,19 +60,19 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  text-white" href="#">Our Staff</a>
+                            <a class="nav-link" href="#choose_us">Our Staff</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">News</a>
+                            <a class="nav-link" href="#news">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Gallery</a>
+                            <a class="nav-link" href="#tesimonials">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Contact</a>
+                            <a class="nav-link" href="#footer">Contact</a>
                         </li>
                     </ul>
                     <button class="btn" type="submit">ENROLL NOW</button>
@@ -85,8 +87,10 @@
             </div>
         </div>
     </header>
+    <!-- End header -->
 
-    <section id="browse">
+    <!-- start section-Category -->
+    <section id="Category">
         <div class="container">
 
             <div class="row">
@@ -201,28 +205,34 @@
 
         </div>
     </section>
+    <!-- End section-Category -->
 
-    <section id="become-an-Ins">
-        <div class="po position-relative">
-            <div class="image position-absolute top-0 start-75 translate-middle"><img class="w-100"
-                    src="./image/student.jpg" alt="">
-            </div>
-            <div class="text position-absolute top-50 start-10 translate-middle-y">
-                <h2 class="card-title text-primary mb-4">Become an Instructor</h2>
-                <p class="card-text">Far far away, behind the word mountains, far from the countries vokalia
-                    and
-                    Consonantia,there live the blind texts. Separated they live.</p>
-                <div>
-                    <p><i class="fa-solid fa-check text-primary"></i> Behind the word Mountains</p>
-                    <p><i class="fa-solid fa-check text-primary"></i> Far for away Mountains</p>
-                    <p><i class="fa-solid fa-check text-primary"></i> Large language Ocean</p>
+
+    <section id="become_instructor" class=" bg-gray mb-0 d-flex flex-column justify-content-center align-items-center">
+        <div class=" container">
+            <div class="row justify-content-center">
+                <!-- here we have tow parts the first one is the content and the second one is the photo -->
+                <div class="col-lg-5 col-12">
+                    <h1 class="card-title text-primary mb-4">Become an Instructor</h1>
+                    <p class="card-text">Far far away, behind the word mountains, far from the countries vokalia
+                        and
+                        Consonantia,there live the blind texts. Separated they live.</p>
+                    <div>
+                        <p><i class="fa-solid fa-check text-primary px-1"></i> Behind the word Mountains</p>
+                        <p><i class="fa-solid fa-check text-primary px-1"></i> Far for away Mountains</p>
+                        <p><i class="fa-solid fa-check text-primary px-1"></i> Large language Ocean</p>
+                    </div>
+                    <button class="btn mb-4 mt-4" type="submit">GET STARTED</button>
                 </div>
-                <button class="btn" type="submit">GET STARTED</button>
+                <div class="col-lg-5 col-8">
+                    <img src="./assets/image/student.jpg" alt="" class="top-100 over-img  w-100">
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="best-education">
+    <!-- start section Subject_Education -->
+    <section id="Subject_Education">
         <div class="container">
 
             <div class="row">
@@ -235,8 +245,8 @@
 
             <div class="row g-4">
                 <div class="col-lg-4">
-                    <div class=" d-flex flex-column align-items-center text-center border border-light-subtle p-1 ">
-                        <div class="iconbox border border-1 border-dark-subtle mb-4">
+                    <div class="card-effect d-flex flex-column align-items-center text-center">
+                        <div class="iconbox  border border-1 border-dark-subtle mb-4">
                             <i class="fa-solid fa-music"></i>
                         </div>
                         <div>
@@ -248,7 +258,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="d-flex flex-column align-items-center text-center border border-light-subtle p-1">
+                    <div class="card-effect d-flex flex-column align-items-center text-center">
                         <div class="iconbox border border-1 border-dark-subtle mb-4">
                             <i class="fa-solid fa-calculator"></i>
                         </div>
@@ -261,7 +271,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="d-flex flex-column align-items-center text-center border border-light-subtle p-1">
+                    <div class="card-effect d-flex flex-column align-items-center text-center">
                         <div class="iconbox border border-1 border-dark-subtle mb-4">
                             <i class="fa-solid fa-book-open"></i>
                         </div>
@@ -274,7 +284,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="d-flex flex-column align-items-center text-center border border-light-subtle p-1">
+                    <div class="card-effect d-flex flex-column align-items-center text-center">
                         <div class="iconbox border border-1 border-dark-subtle mb-4">
                             <i class="fa-solid fa-book"></i>
                         </div>
@@ -287,7 +297,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="d-flex flex-column align-items-center text-center border border-light-subtle p-1">
+                    <div class="card-effect d-flex flex-column align-items-center text-center">
                         <div class="iconbox border border-1 border-dark-subtle mb-4">
                             <i class="fa-solid fa-clock-rotate-left"></i>
                         </div>
@@ -300,7 +310,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="d-flex flex-column align-items-center text-center border border-light-subtle p-1">
+                    <div class="card-effect d-flex flex-column align-items-center text-center">
                         <div class="iconbox border border-1 border-dark-subtle mb-4">
                             <i class="fa-solid fa-headphones"></i>
                         </div>
@@ -314,8 +324,10 @@
             </div>
         </div>
     </section>
+    <!-- end section Subject_Education -->
 
-    <section class="bg-gray">
+    <!-- start section right course -->
+    <section id="right_course" class="bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto text-center mb-5">
@@ -326,9 +338,9 @@
             </div>
 
             <div class="row g-4">
-                <div class="col-lg-4">
+                <div class="d-flex flex-wrap justify-content-center col-lg-4">
                     <div class="card border border-0" style="width: 22rem;">
-                        <img src="./image/card-1.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/image/card-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="d-flex justify-content-between mt-3">
                                 <div class="text-primary">
@@ -349,7 +361,7 @@
                             <div
                                 class="d-flex justify-content-between mt-3 p-2 border-top border-1 border-opacity-25 border-light-subtle">
                                 <div>
-                                    <p>$87.00</p>
+                                    <p class="price">$87.00</p>
                                 </div>
                                 <div>
                                     <a href="">Learn More</a>
@@ -359,9 +371,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="d-flex flex-wrap justify-content-center col-lg-4">
                     <div class="card border border-0" style="width: 22rem;">
-                        <img src="./image/card-2.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/image/card-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="d-flex justify-content-between mt-3">
                                 <div class="text-primary">
@@ -382,7 +394,7 @@
                             <div
                                 class="d-flex justify-content-between mt-3 p-2 border-top border-1 border-opacity-25 border-light-subtle">
                                 <div>
-                                    <p>$93.00</p>
+                                    <p class="price">$93.00</p>
                                 </div>
                                 <div>
                                     <a href="">Learn More</a>
@@ -392,9 +404,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="d-flex flex-wrap justify-content-center col-lg-4">
                     <div class="card border border-0" style="width: 22rem;">
-                        <img src="./image/card-3.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/image/card-3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="d-flex justify-content-between mt-3">
                                 <div class="text-primary">
@@ -415,7 +427,7 @@
                             <div
                                 class="d-flex justify-content-between mt-3 p-2 border-top border-1 border-opacity-25 border-light-subtle">
                                 <div>
-                                    <p>$65.00</p>
+                                    <p class="price">$65.00</p>
                                 </div>
                                 <div>
                                     <a href="">Learn More</a>
@@ -427,8 +439,10 @@
             </div>
         </div>
     </section>
+    <!-- end section right course -->
 
-    <section id="Education" class="w-100 vh-100">
+    <!-- start section right course -->
+    <section id="hero_2" class="w-100 vh-100">
         <div class="container">
             <div class="middle d-flex flex-column justify-content-center align-items-center mx-auto text-center">
                 <h1 class="text-white fw-bold">Education for Tomorrow's Leaders</h1>
@@ -440,45 +454,53 @@
         </div>
     </section>
 
-    <section id="about">
-        <div class="position-relative vh-100 w-100">
-            <div class="position-absolute top-50 end-0 translate-middle-y h-50 w-25 bg-light-blue"></div>
-            <div class="vedio position-absolute  start-60 translate-middle"><iframe class="w-100 h-100"
-                    src="./vedio/learning children.mp4" frameborder=""></iframe>
-            </div>
-            <div class="text position-absolute top-50 start-10 translate-middle-y">
-                <h2 class="card-title text-primary mb-4">About US</h2>
-                <p class="card-text">
-                    Far far away, behind the word mountains, far from the countries vokalia and
-                    Consonantia,there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
-                    the Semantics, a large language ocean
-                </p>
-                <div>
-                    <p><i class="fa-solid fa-check text-primary check"></i>Separated they live</p>
-                    <p><i class="fa-solid fa-check text-primary check"></i>Bookmarksgrove right at the coast</p>
-                    <p><i class="fa-solid fa-check text-primary check"></i> Large language Ocean</p>
+    <!-- start section about -->
+    <section id="About" class="d-flex flex-column align-items-center justify-content-center ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="text-center text-primary mb-4">About US</h1>
+                    <p>
+                        Far far away, behind the word mountains, far from the countries vokalia and
+                        Consonantia,there live the blind texts. Separated they live in Bookmarksgrove right at the coast
+                        of
+                        the Semantics, a large language ocean
+                    </p>
+                    <div>
+                        <p><i class="fa-solid fa-check text-primary check px-2"></i>Separated they live</p>
+                        <p><i class="fa-solid fa-check text-primary check px-2"></i>Bookmarksgrove right at the coast
+                        </p>
+                        <p><i class="fa-solid fa-check text-primary check px-2"></i> Large language Ocean</p>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-lg-4 px-1">
+                            <p class="text-primary">204+</p>
+                            <p>No. Students</p>
+                        </div>
+                        <div class="col-lg-4 px-1">
+                            <p class="text-primary">0</p>
+                            <p>No. Teachers</p>
+                        </div>
+                        <div class="col-lg-4 px-1">
+                            <p class="text-primary">0</p>
+                            <p>No. Awards</p>
+                        </div>
+                    </div>
+                    <button class="btn mt-3 mb-5  fw-bold" type="submit">ADMISSION</button>
+                    <button class="btn mt-3 mb-5 btn-light  fw-bold" type="submit">LEARN
+                        MORE</button>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 px-1">
-                        <p class="text-primary">204+</p>
-                        <p>No. Students</p>
-                    </div>
-                    <div class="col-lg-4 px-1">
-                        <p class="text-primary">0</p>
-                        <p>No. Teachers</p>
-                    </div>
-                    <div class="col-lg-4 px-1">
-                        <p class="text-primary">0</p>
-                        <p>No. Awards</p>
-                    </div>
+                <div class="col-lg-6">
+                    <video controls class="mt-5 shadow w-100">
+                        <source src="./assets/vedio/learning children.mp4" type="video/mp4">
+                    </video>
                 </div>
-                <button class="btn mt-3  fw-bold" type="submit">ADMISSION</button>
-                <button class="btn mt-3 btn-light  fw-bold" type="submit">LEARN
-                    MORE</button>
             </div>
         </div>
     </section>
+    <!-- end section about -->
 
+    <!-- start section news education -->
     <section id="news" class="bg-gray">
         <div class="container">
             <div class="row">
@@ -493,7 +515,7 @@
                     <div class="card mb-3 border-0" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="./image/card-4.jpg" class="img-fluid rounded-start" alt="...">
+                                <img src="./assets/image/card-4.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -515,7 +537,7 @@
                     <div class="card mb-3 border-0" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="./image/card-4.jpg" class="img-fluid rounded-start" alt="...">
+                                <img src="./assets/image/card-4.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -536,7 +558,9 @@
             </div>
         </div>
     </section>
+    <!-- end section news education -->
 
+    <!-- start section pricing -->
     <section id="pricing">
         <div class="container">
             <div class="row">
@@ -548,7 +572,7 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-4">
+                <div class="d-flex flex-wrap justify-content-center col-lg-4">
                     <div class="card text-center mb-3" style="width: 20rem;">
                         <div class="card-body">
                             <h5 class="card-title text-primary">Starter</h5>
@@ -561,7 +585,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="d-flex flex-wrap justify-content-center col-lg-4">
                     <div class="card text-center mb-3" style="width: 20rem;">
                         <div class="card-body">
                             <h5 class="card-title text-primary">Business</h5>
@@ -574,7 +598,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="d-flex flex-wrap justify-content-center col-lg-4">
                     <div class="card text-center mb-3" style="width: 20rem;">
                         <div class="card-body">
                             <h5 class="card-title text-primary">Premium</h5>
@@ -591,83 +615,206 @@
             </div>
         </div>
     </section>
+    <!-- end section pricing -->
 
-    <section id="choose-us">
-        <div class="container">
-            <div class="card mb-3 border-0" style="max-width:100%;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./image/card-4.jpg" class="w-100" alt="...">
+
+    <!-- start section tesimonials -->
+    <section id="tesimonials" class="bg-gray justify-content-center align-items-center">
+        <div class="container py-3 d-flex justify-content-center align-items-center flex-column">
+            <h1 class="text-center mb-5">Tesimonials</h1>
+            <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center align-items-center">
+                <div class="carousel-indicators">
+                    <button type="button" id="corousal-indecator" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" id="corousal-indecator" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" id="corousal-indecator" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="info text-center mx-auto py-5">
+                            "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove right at the cast of
+                            Semantics, a larg language ocean"
+                        </p>
+                        <img src="./assets/image/person-1.jpg" alt="" class="rounded-pill mx-auto d-block mb-3">
+                        <p class="text-center text-primary mb-0">John Doe</p>
+                        <p class="text-center pb-5 mb-5">CEO, Founder</p>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <div class="w-100">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-4 text-primary fs-3">Why Choose Us</h5>
-                                    <p class="card-text">
-                                        Far far away, behind the word mountains, far from the countries vokalia and
-                                        Consonantia,there live the blind texts.
-                                    </p>
-                                    <div class="card mb-3">
-                                        <div class="card-body bg-primary text-white fs-5 fw-bold">
-                                            - Good Teachers and Staffs
-                                        </div>
-                                    </div>
-                                    <div class="card mb-3 w-100 border-0">
-                                        <div class="row g-0">
-                                            <div class="col-md-4">
-                                                <img src="./image/card-1.jpg" class="img-fluid rounded-start" alt="...">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="card-body">
-                                                    <p class="card-text">Far far away, behind the word mountains,
-                                                        far
-                                                        from the countries vokalia and
-                                                        Consonantia,there live the blind texts.</p>
-                                                    <p class="card-text"> Separated they live in
-                                                        Bookmarksgrove
-                                                        right at the coast of
-                                                        the Semantics, a large language ocean</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="carousel-item">
+                        <p class="info  text-center mx-auto py-5">
+                            "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove right at the cast of
+                            Semantics, a larg language ocean."
+                        </p>
+                        <img src="./assets/image/person-2.jpg" alt="" class="rounded-pill mx-auto d-block mb-3">
+                        <p class="text-center text-primary mb-0">John Doe</p>
+                        <p class="text-center pb-5 mb-5">CEO, Founder</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="info  text-center mx-auto py-5">
+                            "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove right at the cast of
+                            Semantics, a larg language ocean."
+                        </p>
+                        <img src="./assets/image/person-3.jpg" alt="" class="rounded-pill mx-auto d-block mb-3">
+                        <p class="text-center text-primary mb-0">John Doe</p>
+                        <p class="text-center pb-5 mb-5">CEO, Founder</p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 mx-auto text-center mb-5">
-
-                    <p><i class="fa-solid fa-plus"></i>We Value Good Characters</p>
-
-                    <p><i class="fa-solid fa-plus"></i>Your Children are Safe</p>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon text-primary" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
 
-    <footer class="bg-primary pt-5">
-        <div class="container">
+    <!-- end section tesimonials -->
+
+    <!-- start section choose us -->
+    <section id="choose_us" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="container py-5">
             <div class="row">
+                <div class="col-lg-5">
+                    <img src="./assets/image/card-4.jpg" alt="" class="w-100 mb-4">
+                </div>
+                <div class="col-lg-7">
+                    <h1 class="textBlue">Why Choose Us</h1>
+                    <p>
+                        Far far away, behind the word mountains, far from the
+                        countries Vokalia and Consonantia, there live the blind texts
+                    </p>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Good Teachers and Staff
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-lg-4 ">
+                                            <img src="./assets/image/card-4.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <p>
+                                                Far far away, behind the word mountains, far from the
+                                                countries Vokalia and Consonantia, there live the blind texts.
+                                            </p>
+                                            <p>
+                                                Separated they live in Bookmarksgrove right at the cast of Semantics,
+                                                a larg language ocean.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Good Teachers and Staff </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-lg-4 ">
+                                            <img src="./assets/image/card-4.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <p>
+                                                Far far away, behind the word mountains, far from the
+                                                countries Vokalia and Consonantia, there live the blind texts.
+                                            </p>
+                                            <p>
+                                                Separated they live in Bookmarksgrove right at the cast of Semantics,
+                                                a larg language ocean.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Good Teachers and Staff </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-lg-4 ">
+                                            <img src="./assets/image/card-4.jpg" alt="" class="w-100">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <p>
+                                                Far far away, behind the word mountains, far from the
+                                                countries Vokalia and Consonantia, there live the blind texts.
+                                            </p>
+                                            <p>
+                                                Separated they live in Bookmarksgrove right at the cast of Semantics,
+                                                a larg language ocean.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section choose us -->
+
+
+    <!-- start Footer -->
+    <footer id="footer" class=" pt-5">
+        <div class="container">
+            <div class="row mx-auto text-center">
                 <div class="col-lg-3 text-white">
                     <div class="row">
-                        <h5>About</h5>
+                        <h4 class="mb-5">About</h4>
                         <p>
                             Far far away, behind the word mountains, far from the countries vokalia and
                             Consonantia,there live the blind texts
                         </p>
                     </div>
-                    <div class="row">
-                        <h5>Contact</h5>
-
+                    <div class="row mt-4">
+                        <h4 class="mb-5">Contact</h4>
+                        <div class="socialMedia">
+                            <a href="https://www.facebook.com/ranem.alrefaie"><i
+                                    class="fa-brands fa-facebook-f social"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ranim_refaie"><i
+                                    class="fa-brands fa-instagram social"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ranim-alrefaie-a2ba741bb"><i
+                                    class="fa-brands fa-linkedin-in social"></i>
+                            </a>
+                            <a href="https://dribbble.com/ranim_Refaie"><i class="fa-brands fa-dribbble social"></i></a>
+                            <a href="https://www.pinterest.com/ranemalre"><i
+                                    class="fa-brands fa-pinterest social"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 text-white">
-                    <h5>Project</h5>
+                    <h4 class="mb-5">Project</h4>
                     <p class="c-text">Web Design</p>
                     <p class="c-text">HTML5</p>
                     <p class="c-text">CSS3</p>
@@ -675,11 +822,33 @@
                     <p class="c-text">Bootstrap</p>
                 </div>
                 <div class="col-lg-3 text-white">
-                    <h5>Gallery</h5>
+                    <h4 class="mb-5"> Gallery</h4>
+                    <div class="row">
+                        <div class="col-lg-4 mb-2 ">
+                            <img src="./assets/image/1.jpg" alt="Gallery" class="w-100">
+                        </div>
+                        <div class="col-lg mb-2">
+                            <img src="./assets/image/2.jpg" alt="Gallery" class="w-100">
+                        </div>
+                        <div class="col-lg-4  mb-2">
+                            <img src="./assets/image/3.jpg" alt="Gallery" class="w-100">
+                        </div>
+                        <div class="col-lg-4  mb-2">
+                            <img src="./assets/image/4.jpg" alt="Gallery" class="w-100">
+                        </div>
+                        <div class="col-lg-4  mb-2">
+
+                            <img src="./assets/image/3.jpg" alt=" Gallery" class="w-100">
+
+                        </div>
+                        <div class="col-lg-4  mb-2">
+                            <img src="./assets/image/card-1.jpg" alt="Gallery" class="w-100">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-lg-3 text-white">
-                    <h5>Contact</h5>
+                    <h4 class="mb-5">Contact</h4>
                     <p>43 Raymounth Rd. Baltemoer, London 3910 </p>
                     <p class="c-text">+1(123)-456-7890</p>
                     <p class="c-text">+1(123)-456-7890</p>
@@ -687,15 +856,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5 text-white">
+                <div class="col-lg-8 py-5  mx-auto text-center mb-5 text-white">
                     <p>Copyright <i class="fa-regular fa-copyright"></i> 2023. All Right Reserved. -Designed with love
-                        by Untree.co Distributed By ThemeWagon</p>
+                        By Ranim Alrefaie</p>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- End Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

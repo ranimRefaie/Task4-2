@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.7;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    background: linear-gradient(rgba(15, 42, 197, 0.5), rgb(71, 86, 173)), url('../image/kids-1093758.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.top-nav {
+    padding: 10px 0;
+}
+
+.top-nav p {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.top-nav .icon {
+    padding-right: 1px;
+}
+
+
+.top-nav a {
+    margin-right: 15px;
+}
+
+.top-nav::after {
+    content: "";
+    position: absolute;
+    width: 96%;
+    height: 1px;
+    background-color: #b3b7c5;
+    margin: 10px 0;
+}
+
+.navbar {
+    margin-top: 60px;
+    transition: all 0.5s;
+}
+
+.navbar-scrolled {
+    background-color: #3644be;
+    margin-top: 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+li a {
+    font-size: 18px;
+}
+
+
+.middle {
+    height: 80vh;
+    width: 50%;
+}
+
+.middle h1 {
+    font-size: 40px;
+}
+
+/* ----------------End------------------ */
+
+
+/*--------- start section-Category------- */
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+#Category .card-effect {
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(9, 43, 153, 0.5);
+
+}
+
+#Subject_Education .iconbox,
+#Category .iconbox {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: rgb(81, 114, 223);
+    font-size: 30px;
+    border-radius: 100px;
+    margin: 0 10px;
+}
+
+/*--------- End section-Category-------- */
+
+/* start section become instructor  */
+#become_instructor img {
+    transform: translateY(-22%);
+}
+
+/* end section become instructor  */
+
+/* start section subject_Education */
+#Subject_Education .card-effect {
+    border: 1px solid rgba(112, 110, 112, 0.1);
+    padding: 10px;
+}
+
+#Subject_Education .card-effect:hover {
+    box-shadow: 0 3px 10px rgba(8, 55, 207, 0.5);
+}
+
+/* End section subject_Education */
+
+
+/* start right course section */
+#right_course a {
+    transition: 0.6s;
+}
+
+#right_course a:hover {
+    font-size: 18px;
+}
+
+#right_course .price {
+    font-size: 20px;
+}
+
+#right_course card {
+    transition: 0.5s;
+}
+
+#right_course .card:hover {
+    background-color: #cdd6e7;
+}
+
+/* end right course section */
+
+
+/*start section Education-hero  */
+#hero_2 {
+    background: linear-gradient(rgba(15, 42, 197, 0.4), rgb(134, 147, 219)), url('../image/bg-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* section Education-hero  */
+
+/* start section about */
+
+#about .check {
+    padding-right: 5px;
+}
+
+#tesimonials img {
+    width: 100px;
+}
+
+.shadow {
+    box-shadow: 100px -60px 0 0 rgb(208, 225, 247) !important;
+}
+
+/* end section about */
+
+
+/* start corousal indecator section */
+#corousal-indecator {
+    background-color: #b3b7c5;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#corousal-indecator.active {
+    background-color: #3644be;
+}
+
+/* end corousal indecator section */
+
+/* start choose us section */
+#choose_us button:focus {
+    background-color: #3644be;
+    color: white;
+}
+
+/* end choose us section */
+
+/*--------- Footer-------- */
+footer {
+    background-color: #3644be;
+}
+
+footer .c-text {
+    color: rgb(157, 167, 184);
+    transition: all 0.8s;
+}
+
+footer .c-text:hover {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+footer .socialMedia a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    /* border: 1px solid #fff; */
+    text-align: center;
+    border-radius: 50px;
+    color: #3644be;
+    background-color: white;
+    padding: 3px 0;
+    transition: all 0.8s;
+}
+
+
+.socialMedia a .social {
+    font-size: 20px;
+}
+
+.socialMedia a:hover {
+    background-color: #7a86f3;
+    color: white;
+    width: 35px;
+    height: 35px;
+    padding: 7px 0;
+    margin-right: 5px;
+}
+
+
+
+/*--------- backgrond colors-------- */
+.bg-gray {
+    background-color: rgb(246, 247, 248);
+}
+
+.bg-light-blue {
+    background-color: rgb(208, 225, 247);
+}
+
+/*--------- End backgrond colors-------- */
+
+/*---------Style button-------- */
+.btn {
+    background-color: rgb(13, 110, 253);
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5;
+}
+
+.btn:hover {
+    color: rgb(13, 110, 253);
+    background-color: rgb(192, 219, 231);
+}
+
+.btn-light {
+    color: rgb(13, 110, 253);
+    border-radius: 20px;
+    border: 1px solid rgb(13, 110, 253);
+    background-color: white;
+    transition: 0.5;
+}
+
+.btn-light:hover {
+    color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(13, 110, 253);
+    background-color: rgb(122, 172, 248);
+}
+
+
+
+@media screen and (max-width : 992px) {
+    #become_instructor img {
+        transform: translateY(0%);
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+    .top-nav p {
+        display: none;
+    }
+
+}
