@@ -62,6 +62,11 @@ header {
 .navbar-brand {
     font-weight: 700;
     font-size: 26px;
+    transition: all 0.1s;
+}
+
+.navbar-brand:hover {
+    font-size: 28px;
 }
 
 li a {
@@ -106,6 +111,13 @@ section {
     font-size: 30px;
     border-radius: 100px;
     margin: 0 10px;
+    transition: all 0.5s;
+}
+
+#Category .iconbox:hover {
+    font-size: 35px;
+    background-color: #d8daee;
+    cursor: pointer;
 }
 
 /*--------- End section-Category-------- */
@@ -169,6 +181,42 @@ section {
     padding-right: 5px;
 }
 
+
+
+#pricing .card .card-body::before {
+    top: 90%;
+    left: -100%;
+}
+
+#pricing .card:hover {
+    border: 3px solid #7a86f3;
+}
+
+#pricing .card .card-body {
+    position: relative;
+    z-index: 1;
+}
+
+#pricing .card .card-body::before {
+    content: '';
+    width: 5px;
+    height: 100%;
+    background-color: rgba(68, 77, 190, 0.1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.6s;
+}
+
+#pricing .card .card-body:hover::before {
+    width: 100%;
+}
+
+#tesimonials {
+    background-color: #babcce !important;
+}
+
 #tesimonials img {
     width: 100px;
 }
@@ -182,7 +230,7 @@ section {
 
 /* start corousal indecator section */
 #corousal-indecator {
-    background-color: #b3b7c5;
+    background-color: #fff;
     width: 10px;
     height: 10px;
     border-radius: 50%;
